@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <div class="app-top-bar">
     <v-app-bar class="d-flex align-center" app
       color="brown darken-4"
       dark>
@@ -17,7 +17,7 @@
         nav
         dense
       >
-        <v-list-item-group v-model="group" active-class="brown darken-4">
+        <v-list-item-group active-class="orange--text text--accent-4">
           <router-link to="/">
             <v-list-item>
               <v-list-item-icon>
@@ -57,8 +57,7 @@
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
-  
-  </v-app>
+  </div>
 </template>
 
 <script>
