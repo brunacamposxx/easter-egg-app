@@ -78,6 +78,7 @@
 <style scoped>
 .form {
 	margin: 20px;
+  background-color: #e9dedc;
 }
 
 .btn {

@@ -105,21 +105,21 @@
           name: 'Guilherme Duarte',
           github: '@duartegui',
           excerpt: 'Thank you for joining our community...',
-					lorem: 'ola como vai guilherme '
+					lorem: 'https://github.com/duartegui https://www.linkedin.com/in/guilherme-duarte-1119b4134/'
 				},
         {
           avatar: 'https://media-exp1.licdn.com/dms/image/C4D03AQEv75PCEhz2bA/profile-displayphoto-shrink_800_800/0/1588019273592?e=2147483647&v=beta&t=unt5smiE8W7f1i94TspsWeroUdQOiMhgFumX4Y9uPGc',
           name: 'Larissa Dinart',
           github: '@larissadinart',
           excerpt: 'Thank you for joining our community...',
-					lorem: 'ola como vai Larissa'
+					lorem: 'https://github.com/larissadinart https://www.linkedin.com/in/larissa-dinart-93b47b94/'
 				},
 				{
           avatar: 'https://media-exp1.licdn.com/dms/image/C4D03AQH5FBBIjQmykg/profile-displayphoto-shrink_800_800/0/1645122007558?e=2147483647&v=beta&t=IumXDrSbmTV4aYF41l78bFZT-hhGc5v3xWZgn0JGoPs',
           name: 'Mariana Bulhões de Lima',
           github: '@bulhoesmari',
           excerpt: 'Thank you for joining our community...',
-					lorem: 'ola como vai Mariana'
+					lorem: 'https://github.com/bulhoesmari https://www.linkedin.com/in/mariana-blima/'
 
 				},
         {
@@ -134,7 +134,7 @@
           name: 'Vinicius Machado Ribeiro',
           github: '@vinicius-m9',
           excerpt: 'Thank you for joining our community...',
-					lorem: 'ola como vai Vinicius'
+					lorem: 'https://github.com/vinicius-m9 https://www.linkedin.com/in/vinicius-machado-ribeiro-1247a3203/'
 				},
 				{
           color: 'red',
@@ -145,18 +145,8 @@
           github: 'easter-egg-app',
 					lorem: 'https://github.com/brunacamposxx/easter-egg-app'
 
-        },
-        // {
-        //   color: 'teal',
-        //   icon: 'mdi-tag',
-        //   name: '',
-        //   commits: 2,
-        //   total: 4,
-        //   github: '',
-        //   exceprt: '',
-        // },
-      ],
-      // lorem: 'ola como vai fora ',
+        }
+      ]
     }),
   }
 </script>
