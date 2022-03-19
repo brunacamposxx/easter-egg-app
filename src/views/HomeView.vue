@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <HomeCarousel :ovos="ovos"/>
+    <HomeCarousel :produtos="produtos"/>
   </v-container>
 </template>
 
@@ -14,13 +14,13 @@
     },
     data() {
       return {
-        ovos: []
+        produtos: []
       }
     },
     created() {
       fetch('https://it3-hbn-default-rtdb.firebaseio.com/ovosPascoa.json')
       .then(res => res.json())
-      .then(json => { this.ovos = json })
+      .then(json => { this.produtos = json })
     }
   }
 </script>
