@@ -46,7 +46,7 @@ export default {
 .produto-detalhe {
   margin: 5px;
   padding: 5px;
-  background-image: linear-gradient(brown, white);
+  background-image: linear-gradient(#e9dedc, #e9dedc);
   border-radius: 10px;
 }
 .titulo {
