@@ -1,5 +1,5 @@
 <template>
-  <div classe="LojasView">
+  <v-container>
     <h1 class="text-h5 text-center mb-3 mt-5">Lojas Parceiras</h1>
     <div class="botoes-loja d-flex flex-column justify-center align-center container">
       <v-btn class="botoes"
@@ -53,7 +53,7 @@
         loja5</v-btn
       >
     </div>
-  </div>
+  </v-container>
 </template>
 
 <script>

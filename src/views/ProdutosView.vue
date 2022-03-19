@@ -1,8 +1,7 @@
 <template>
- <v-main>
-   <CardProduto :produtos="produtos"/>
- </v-main>
-  
+  <v-container>
+    <CardProduto :produtos="produtos"/>
+  </v-container>
 </template>
 
 <script>
@@ -15,8 +14,7 @@
 
     data(){
        return{
-            produtos: [
-            ]
+            produtos: []
        }
     },
 
@@ -25,7 +23,6 @@
       .then(resultado => resultado.json())
       .then(json => {
         this.produtos = json;
-        console.log(this.produtos)
       });
       
     }

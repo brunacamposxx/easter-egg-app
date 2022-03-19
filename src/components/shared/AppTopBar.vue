@@ -1,11 +1,11 @@
 <template>
-  <v-app>
-    <v-app-bar class="d-flex align-center" app
+  <div class="app-top-bar">
+    <v-app-bar app
       color="deep-orange lighten-1"
       dark>
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
       
-     <v-spacer> <v-toolbar-title><span class="font-weight-bold">Easter Egg</span></v-toolbar-title> </v-spacer>
+      <v-toolbar-title><span class="font-weight-bold">Easter Egg</span></v-toolbar-title>
     </v-app-bar>
 
     <v-navigation-drawer
@@ -17,6 +17,7 @@
         nav
         dense
       >
+        <v-list-item-group v-model="group" active-class="orange--text text--accent-4">
           <router-link to="/">
             <v-list-item>
               <v-list-item-icon>
@@ -43,11 +44,19 @@
               <v-list-item-title>Lojas Parceiras</v-list-item-title>
             </v-list-item>
           </router-link>
+        </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
-
-    <v-main>
-      <router-view/>
-    </v-main>
-  </v-app>
+  </div>
 </template>
+
+<script>
+export default {
+  name: 'AppTopBar',
+  data() {
+    return {
+      drawer: false
+    }
+  }
+}
+</script>
