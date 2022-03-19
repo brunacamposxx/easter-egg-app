@@ -124,10 +124,10 @@
 				},
         {
           avatar: 'https://avatars.githubusercontent.com/u/71824475?v=4',
-          name: 'Rebeca Maria Fialho Camilo',
+          name: 'Rebeca Camilo',
           github: '@rebecacamilo',
           excerpt: 'Thank you for joining our community...',
-					lorem: 'ola como vai Rebeca'
+					lorem: 'https://github.com/RebecaCamilo https://www.linkedin.com/in/rebeca-camilo-377444180/'
 				},
         {
           avatar: 'https://scontent.fcgh50-1.fna.fbcdn.net/v/t1.6435-1/40160629_1112069558940839_1698934370460499968_n.jpg?stp=dst-jpg_p160x160&_nc_cat=108&ccb=1-5&_nc_sid=dbb9e7&_nc_ohc=nX6mYSQLX68AX_R_UtN&_nc_ht=scontent.fcgh50-1.fna&oh=00_AT-N4KgjMIOlDVX4F5rd0kz945aCJjOPqEIBR0AX9HUIug&oe=625A9CC1',
