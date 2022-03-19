@@ -22,7 +22,7 @@ export default {
 
 <style>
 #app {
-  background-image: linear-gradient(#4d2600, #ffaa00);
+  background-color: #B2DFDB;
 }
 
 .app-top-bar a {
