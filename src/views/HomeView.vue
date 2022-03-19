@@ -1,5 +1,6 @@
 <template>
-  <h1>Estou na rota de Home</h1>
+  <h1> </h1>
+  
 </template>
 
 <script>
