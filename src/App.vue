@@ -21,8 +21,8 @@ export default {
 </script>
 
 <style>
-#app {
-  background-color: #B2DFDB;
+  #app {
+    background-image: url(https://i.pinimg.com/736x/b3/58/2d/b3582de870bfb83b5be9ccf433c2acce.jpg);
 }
 
 .app-top-bar a {
