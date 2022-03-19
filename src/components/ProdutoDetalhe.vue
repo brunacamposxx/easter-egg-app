@@ -8,7 +8,7 @@
         :alt="produto.nome"
       ></v-img>
     </div>
-    <h3 class="valor row">R$ {{ produto.preco }}</h3>
+    <h3 class="valor">R$ {{ produto.preco }}</h3>
     <div>
       <p class="texto-detalhe">
         Venha provar nosso delicioso {{ produto.nome }}, seu irresistível
@@ -43,10 +43,14 @@ export default {
 </script>
 
 <style scoped>
-.prod-detalhes {
+.produto-detalhe {
   margin: 5px;
+  padding: 5px;
+  background-image: linear-gradient(brown, white);
+  border-radius: 10px;
 }
 .titulo {
+  padding: 0 0 0 10px;
   font-weight: 600;
   margin-top: 5px;
   margin-bottom: 3px;
@@ -58,7 +62,7 @@ export default {
   margin: 15px 0;
 }
 .valor {
-  color: orange;
+  padding: 0 0 0 10px;
   font-weight: 500;
 }
 .texto-detalhe {
