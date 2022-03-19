@@ -31,8 +31,5 @@
 </script>
 
 <style scoped>
-.card-produto a {
-  text-decoration: none;
-}
 
 </style>
