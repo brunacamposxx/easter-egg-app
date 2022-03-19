@@ -1,7 +1,7 @@
 <template>
-  <div class="app-top-bar">
-    <v-app-bar app
-      color="deep-orange lighten-1"
+  <v-app>
+    <v-app-bar class="d-flex align-center" app
+      color="brown darken-4"
       dark>
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
       
@@ -17,7 +17,7 @@
         nav
         dense
       >
-        <v-list-item-group v-model="group" active-class="orange--text text--accent-4">
+        <v-list-item-group v-model="group" active-class="brown darken-4">
           <router-link to="/">
             <v-list-item>
               <v-list-item-icon>
@@ -57,7 +57,8 @@
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
-  </div>
+  
+  </v-app>
 </template>
 
 <script>
