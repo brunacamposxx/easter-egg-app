@@ -17,7 +17,7 @@
         nav
         dense
       >
-        <v-list-item-group v-model="group" active-class="orange--text text--accent-4">
+        <v-list-item-group active-class="orange--text text--accent-4">
           <router-link to="/">
             <v-list-item>
               <v-list-item-icon>
