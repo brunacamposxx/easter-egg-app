@@ -5,7 +5,7 @@
                     <v-layout row wrap>
                         <v-flex xs12 sm6 md4 lg3 v-for="produto of produtos" :key="produto.id" >
                             <router-link :to="`/produtos/${produto.id}`">
-                                <v-card class="ma-6" color="teal accent-4">
+                                <v-card class="ma-6"  color="brown darken-4" dark>
                                   
                                     <v-img :src="produto.imagem"/>
                         
