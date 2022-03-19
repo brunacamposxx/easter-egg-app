@@ -23,8 +23,11 @@
       .then(json => { this.produtos = json })
     }
   }
+
 </script>
 
 <style scope>
 
 </style>
+
+
