@@ -5,6 +5,8 @@ import ProdutosView from '../views/ProdutosView.vue'
 import LojasView from '../views/LojasView.vue'
 import ProdutoView from  '../views/ProdutoView.vue'
 import AboutView from  '../views/AboutView.vue'
+import CadastroView from '../views/CadastroView.vue'
+
 
 Vue.use(VueRouter)
 
@@ -33,6 +35,11 @@ const routes = [
     path: '/sobre',
     name: 'about',
     component: AboutView
+  },
+  {
+    path: '/cadastro',
+    name: 'cadastro',
+    component: CadastroView
   },
 ]
 

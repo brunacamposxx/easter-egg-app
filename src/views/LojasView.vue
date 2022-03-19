@@ -60,7 +60,7 @@
 
 </script>
 
-<style scope>
+<style scoped>
 .botoes {
   width: 80vw;
   margin-bottom: 10%;
