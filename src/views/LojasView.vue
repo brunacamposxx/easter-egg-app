@@ -1,78 +1,47 @@
 <template>
-  <v-container>
-    <h1 class="text-h5 text-center mb-3 mt-5">Lojas Parceiras</h1>
-    <div class="botoes-loja d-flex flex-column justify-center align-center">
-      <v-btn class="botoes"
-        @click="delay"
-        color="teal lighten-1"
-        elevation="2"
-        medium
-        outlined
-        rounded
-      >
-        loja1</v-btn
-      >
-      <v-btn class="botoes"
-        @click="delay"
-        color="teal lighten-1"
-        elevation="2"
-        medium
-        outlined
-        rounded
-      >
-        loja2</v-btn
-      >
-      <v-btn class="botoes"
-        @click="delay"
-        color="teal lighten-1"
-        elevation="2"
-        medium
-        outlined
-        rounded
-      >
-        loja3</v-btn
-      >
-      <v-btn class="botoes"
-        @click="delay"
-        color="teal lighten-1"
-        elevation="2"
-        medium
-        outlined
-        rounded
-      >
-        loja4</v-btn
-      >
-      <v-btn class="botoes"
-        @click="delay"
-        color="teal lighten-1"
-        elevation="2"
-        medium
-        outlined
-        rounded
-      >
-        loja5</v-btn
-      >
+<div class="lojas">
+        <div>
+            <v-container class="my-5">
+                    <v-layout row wrap>
+                        <v-flex xs12 sm6 md4 lg3 v-for="produto of produtos" :key="produto.local.id" >
+                            <v-card class="ma-6" color="brown darken-4" dark>
+                    
+                                <v-card-text>
+                                   <div class="title"><strong>{{produto.local.nome}}</strong></div> 
+                                   <div class="subtitle-1">{{produto.local.endereco}}</div>
+                                </v-card-text>
+                            </v-card>
+                        </v-flex>
+                    </v-layout>
+                        
+            </v-container>
+        </div>
     </div>
-  </v-container>
 </template>
 
 <script>
+  export default {
+    name: 'LojasView',
 
+    data(){
+       return{
+            produtos: []
+       }
+    },
+
+    created(){
+      fetch('https://it3-hbn-default-rtdb.firebaseio.com/ovosPascoa.json')
+      .then(resultado => resultado.json())
+      .then(json => {
+        this.produtos = json;
+      });
+      
+    }
+
+  }
 </script>
 
 <style scope>
-.botoes {
-  width: 80vw;
-  margin-bottom: 10%;
-}
 
-.botoes-loja {
-  width: 100vw;
-  height: 80vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
 
 </style>

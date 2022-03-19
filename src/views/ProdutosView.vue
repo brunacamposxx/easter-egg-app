@@ -1,7 +1,7 @@
 <template>
-  <v-container>
+  <v-main>
     <CardProduto :produtos="produtos"/>
-  </v-container>
+  </v-main>
 </template>
 
 <script>
