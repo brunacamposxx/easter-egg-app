@@ -23,7 +23,7 @@
               <v-list-item-icon>
                 <v-icon>mdi-home</v-icon>
               </v-list-item-icon>
-              <v-list-item-title>Home</v-list-item-title>
+              <v-list-item-title>Início</v-list-item-title>
             </v-list-item>
           </router-link>
 
@@ -39,11 +39,21 @@
           <router-link to="/lojas">
             <v-list-item>
               <v-list-item-icon>
-                <v-icon>mdi-account</v-icon>
+                <v-icon>mdi-store</v-icon>
               </v-list-item-icon>
               <v-list-item-title>Lojas Parceiras</v-list-item-title>
             </v-list-item>
           </router-link>
+
+          <router-link to="/sobre">
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon>mdi-account</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Sobre</v-list-item-title>
+            </v-list-item>
+          </router-link>
+
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
