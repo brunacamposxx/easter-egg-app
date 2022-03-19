@@ -17,28 +17,35 @@
         nav
         dense
       >
-          <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-home</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>Home</v-list-item-title>
-          </v-list-item>
+          <router-link to="/">
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon>mdi-home</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Home</v-list-item-title>
+            </v-list-item>
+          </router-link>
 
-          <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-star</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>Produtos</v-list-item-title>
-          </v-list-item>
+          <router-link to="/produtos">
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon>mdi-star</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Produtos</v-list-item-title>
+            </v-list-item>
+          </router-link>
 
-          <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-account</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>Lojas Parceiras</v-list-item-title>
-          </v-list-item>
+          <router-link to="/lojas">
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon>mdi-account</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Lojas Parceiras</v-list-item-title>
+            </v-list-item>
+          </router-link>
       </v-list>
     </v-navigation-drawer>
+
     <v-main>
       <router-view/>
     </v-main>
