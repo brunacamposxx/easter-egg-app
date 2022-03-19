@@ -3,7 +3,10 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ProdutosView from '../views/ProdutosView.vue'
 import LojasView from '../views/LojasView.vue'
+import ProdutoView from  '../views/ProdutoView.vue'
 import AboutView from  '../views/AboutView.vue'
+import CadastroView from '../views/CadastroView.vue'
+
 
 Vue.use(VueRouter)
 
@@ -19,6 +22,11 @@ const routes = [
     component: ProdutosView
   },
   {
+    path: '/produtos/:id',
+    name: 'produto',
+    component: ProdutoView
+  },
+  {
     path: '/lojas',
     name: 'lojas',
     component: LojasView
@@ -27,6 +35,11 @@ const routes = [
     path: '/sobre',
     name: 'about',
     component: AboutView
+  },
+  {
+    path: '/cadastro',
+    name: 'cadastro',
+    component: CadastroView
   },
 ]
 

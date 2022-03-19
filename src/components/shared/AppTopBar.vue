@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <div class="app-top-bar">
     <v-app-bar class="d-flex align-center" app
       color="brown darken-4"
       dark>
@@ -17,7 +17,7 @@
         nav
         dense
       >
-        <v-list-item-group v-model="group" active-class="brown darken-4">
+        <v-list-item-group active-class="orange--text text--accent-4">
           <router-link to="/">
             <v-list-item>
               <v-list-item-icon>
@@ -30,7 +30,7 @@
           <router-link to="/produtos">
             <v-list-item>
               <v-list-item-icon>
-                <v-icon>mdi-star</v-icon>
+                <v-icon>mdi-rabbit</v-icon>
               </v-list-item-icon>
               <v-list-item-title>Produtos</v-list-item-title>
             </v-list-item>
@@ -48,17 +48,25 @@
           <router-link to="/sobre">
             <v-list-item>
               <v-list-item-icon>
-                <v-icon>mdi-account</v-icon>
+                <v-icon>mdi-rocket</v-icon>
               </v-list-item-icon>
-              <v-list-item-title>Sobre</v-list-item-title>
+              <v-list-item-title>Sobre nós</v-list-item-title>
+            </v-list-item>
+          </router-link>
+
+          <router-link to="/cadastro">
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon>mdi-account-plus</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Cadastro</v-list-item-title>
             </v-list-item>
           </router-link>
 
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
-  
-  </v-app>
+  </div>
 </template>
 
 <script>

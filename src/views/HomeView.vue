@@ -33,7 +33,7 @@ Navegue por nosso app e conheça nossos produtos caseiros para deliciar você a 
 
 </script>
 
-<style scope>
+<style scoped>
 
 </style>
 
