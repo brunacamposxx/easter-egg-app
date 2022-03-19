@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-app-bar class="d-flex align-center" app
-      color="deep-orange lighten-1"
+      color="teal accent-4"
       dark>
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
       
@@ -60,6 +60,6 @@ export default {
 
 <style>
 #app {
-  background-image: linear-gradient(#4d2600, #ffaa00);
+  background-color: #B2DFDB;
 }
 </style>
