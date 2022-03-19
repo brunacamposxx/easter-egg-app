@@ -1,44 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar class="d-flex align-center" app
-      color="teal accent-4"
-      dark>
-      <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
-      
-     <v-spacer> <v-toolbar-title><span class="font-weight-bold">Easter Egg</span></v-toolbar-title> </v-spacer>
-    </v-app-bar>
-
-    <v-navigation-drawer
-      v-model="drawer"
-      absolute
-      temporary
-    >
-      <v-list 
-        nav
-        dense
-      >
-          <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-home</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>Home</v-list-item-title>
-          </v-list-item>
-
-          <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-star</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>Produtos</v-list-item-title>
-          </v-list-item>
-
-          <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-account</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>Lojas Parceiras</v-list-item-title>
-          </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
+    <AppTopBar/>
     <v-main>
       <router-view/>
     </v-main>
@@ -46,16 +8,17 @@
 </template>
 
 <script>
+
+import AppTopBar from './components/AppTopBar.vue'
+
 export default {
   name: 'App',
-  data(){
-    return {
-       drawer: false,
-      group: null,
-    }
-    
-  },
-};
+  components:{
+    AppTopBar
+  }
+  }
+   
+ 
 </script>
 
 <style>
