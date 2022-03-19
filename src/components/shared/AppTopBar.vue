@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <div class="app-top-bar">
     <v-app-bar class="d-flex align-center" app
       color="brown darken-4"
       dark>
@@ -57,8 +57,7 @@
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
-  
-  </v-app>
+  </div>
 </template>
 
 <script>
