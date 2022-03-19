@@ -12,7 +12,7 @@
 export default {
   name: 'HomeCarousel',
   props: {
-    ovos: {
+    produtos: {
       type: Array,
       required: true
     }
@@ -20,7 +20,7 @@ export default {
   computed: {
     algunsOvos() {
       // deep copy
-      const algunsOvos = [ ...this.ovos ]
+      const algunsOvos = [ ...this.produtos ]
 
       return algunsOvos.filter(ovo => [6, 7, 10].includes(ovo.id))
     }
