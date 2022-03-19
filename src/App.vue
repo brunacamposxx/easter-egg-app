@@ -57,3 +57,9 @@ export default {
   },
 };
 </script>
+
+<style>
+#app {
+  background-image: linear-gradient(#4d2600, #ffaa00);
+}
+</style>
